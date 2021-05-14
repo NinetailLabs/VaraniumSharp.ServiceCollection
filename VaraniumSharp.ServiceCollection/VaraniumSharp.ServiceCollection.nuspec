@@ -1,29 +1,36 @@
 <?xml version="1.0" encoding="utf-8"?>
 <package xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
   <metadata xmlns="http://schemas.microsoft.com/packaging/21.0.07/nuspec.xsd">
-    <id></id>
+    <id>VaraniumSharp.ServiceCollection</id>
     <version>0.0.0</version>
-    <authors></authors>
-    <owners></owners>
-    <title></title>
-    <description></description>
-    <summary></summary>
-    <licenseUrl></licenseUrl>
-    <projectUrl></projectUrl>
-    <iconUrl></iconUrl>
+    <authors>NineTail Labs</authors>
+    <owners>NineTail Labs</owners>
+    <title>VaraniumSharp.ServiceCollection</title>
+    <description>Wrapper for IServiceCollection in Asp.Net Core to make it work with VaraniumSharp attribute injection.</description>
+    <summary>Wrapper for IServiceCollection in Asp.Net Core to make it work with VaraniumSharp attribute injection.</summary>
+    <license type="expression">MIT</license>
+    <projectUrl>https://github.com/NinetailLabs/VaraniumSharp.ServiceCollection</projectUrl>
+    <icon>images\nugetIcon.png</icon>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
-    <copyright>Copyright (c) 20</copyright>
+    <copyright>Copyright (c) NineTail Labs 2021</copyright>
     <releaseNotes>ReleaseNotesHere</releaseNotes>
-    <tags></tags>
+    <tags>C# VaraniumSharp Varanium IServiceCollection</tags>
 
-    <repository type="git" url="" commit="GitHashHere" />
+    <repository type="git" url="https://github.com/NinetailLabs/VaraniumSharp.ServiceCollection.git" commit="GitHashHere" />
 
     <dependencies>
-      <dependency id="" version="" />
+      <group targetFramework="netstandard2.0">
+        <dependency id="Microsoft.Extensions.DependencyInjection.Abstractions" version="3.1.2" />
+        <dependency id="VaraniumSharp" version="3.7.0" />
+      </group>
     </dependencies>
   </metadata>
 
   <files>
-    <file src="./bin/Release/netstandard2.0/" target="lib\netstandard2.0" />
+    <file src="../nugetIcon.png" target="\images" />
+    <file src="./bin/Release/netstandard2.0/VaraniumSharp.ServiceCollection.dll" target="lib\netstandard2.0" />
+    <file src="./bin/Release/netstandard2.0/VaraniumSharp.ServiceCollection.pdb" target="lib\netstandard2.0" />
+    <file src="./bin/Release/netstandard2.0/VaraniumSharp.ServiceCollection.xml" target="lib\netstandard2.0" />
+    <file src="./bin/Release/netstandard2.0/VaraniumSharp.ServiceCollection.deps.json" target="lib\netstandard2.0" />
   </files>
 </package>
