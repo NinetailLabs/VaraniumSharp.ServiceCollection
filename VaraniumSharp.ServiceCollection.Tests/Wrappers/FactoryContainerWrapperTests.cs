@@ -1,0 +1,45 @@
+﻿using FluentAssertions;
+using Moq;
+using VaraniumSharp.ServiceCollection.Tests.Fixtures;
+using VaraniumSharp.ServiceCollection.Wrappers;
+using Xunit;
+
+namespace VaraniumSharp.ServiceCollection.Tests.Wrappers
+{
+    public class FactoryContainerWrapperTests
+    {
+        [Fact]
+        public void ResolvingAServiceWorksCorrectly()
+        {
+            // arrange
+            var container = new ServiceProviderFixture();
+            var dummyObject = new Mock<ITestHelper>();
+            container.EntriesToReturns.Add(dummyObject);
+            var sut = new FactoryContainerWrapper(container);
+
+            // act
+            var _ = sut.Resolve<ITestHelper>();
+
+            // assert
+            container.GetServiceRequests.Count.Should().Be(1);
+            container.GetServiceRequests[0].Should().Be(typeof(ITestHelper));
+        }
+
+        [Fact]
+        public void ResolvingManyServicesWorksCorrectly()
+        {
+            // arrange
+            var container = new ServiceProviderFixture();
+            var dummyObject = new Mock<ITestHelper>();
+            container.EntriesToReturns.Add(dummyObject);
+            var sut = new FactoryContainerWrapper(container);
+
+            // act
+            var _ = sut.ResolveMany<)<ITestHelper>();
+
+            // assert
+            container.GetServiceRequests.Count.Should().Be(1);
+            container.GetServiceRequests[0].Should().Be(typeof(ITestHelper));
+        }
+    }
+}
