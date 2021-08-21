@@ -33,6 +33,12 @@ namespace VaraniumSharp.ServiceCollection.Wrappers
         }
 
         /// <inheritdoc />
+        public object Resolve(Type type)
+        {
+            return _serviceProvider.GetService(type);
+        }
+
+        /// <inheritdoc />
         public IEnumerable<TService> ResolveMany<TService>()
         {
             return _serviceProvider.GetServices<TService>();
