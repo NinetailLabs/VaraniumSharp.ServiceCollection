@@ -40,7 +40,7 @@ namespace VaraniumSharp.ServiceCollection.Tests.Wrappers
 
             // assert
             container.GetServiceRequests.Count.Should().Be(1);
-            container.GetServiceRequests[0].Should().Be(typeof(ITestHelper));
+            container.GetServiceRequests[0].Should().Be(typeof(IEnumerable<ITestHelper>));
         }
     }
 }
