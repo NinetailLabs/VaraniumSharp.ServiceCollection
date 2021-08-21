@@ -115,6 +115,57 @@ references:
   commentId: N:VaraniumSharp.ServiceCollection.Wrappers
   fullName: VaraniumSharp.ServiceCollection.Wrappers
   nameWithType: VaraniumSharp.ServiceCollection.Wrappers
+- uid: VaraniumSharp.ServiceCollection.Wrappers.FactoryContainerWrapper
+  name: FactoryContainerWrapper
+  href: api/VaraniumSharp.ServiceCollection.Wrappers.FactoryContainerWrapper.html
+  commentId: T:VaraniumSharp.ServiceCollection.Wrappers.FactoryContainerWrapper
+  fullName: VaraniumSharp.ServiceCollection.Wrappers.FactoryContainerWrapper
+  nameWithType: FactoryContainerWrapper
+- uid: VaraniumSharp.ServiceCollection.Wrappers.FactoryContainerWrapper.#ctor(System.IServiceProvider)
+  name: FactoryContainerWrapper(IServiceProvider)
+  href: api/VaraniumSharp.ServiceCollection.Wrappers.FactoryContainerWrapper.html#VaraniumSharp_ServiceCollection_Wrappers_FactoryContainerWrapper__ctor_System_IServiceProvider_
+  commentId: M:VaraniumSharp.ServiceCollection.Wrappers.FactoryContainerWrapper.#ctor(System.IServiceProvider)
+  fullName: VaraniumSharp.ServiceCollection.Wrappers.FactoryContainerWrapper.FactoryContainerWrapper(System.IServiceProvider)
+  nameWithType: FactoryContainerWrapper.FactoryContainerWrapper(IServiceProvider)
+- uid: VaraniumSharp.ServiceCollection.Wrappers.FactoryContainerWrapper.#ctor*
+  name: FactoryContainerWrapper
+  href: api/VaraniumSharp.ServiceCollection.Wrappers.FactoryContainerWrapper.html#VaraniumSharp_ServiceCollection_Wrappers_FactoryContainerWrapper__ctor_
+  commentId: Overload:VaraniumSharp.ServiceCollection.Wrappers.FactoryContainerWrapper.#ctor
+  isSpec: "True"
+  fullName: VaraniumSharp.ServiceCollection.Wrappers.FactoryContainerWrapper.FactoryContainerWrapper
+  nameWithType: FactoryContainerWrapper.FactoryContainerWrapper
+- uid: VaraniumSharp.ServiceCollection.Wrappers.FactoryContainerWrapper.Resolve*
+  name: Resolve
+  href: api/VaraniumSharp.ServiceCollection.Wrappers.FactoryContainerWrapper.html#VaraniumSharp_ServiceCollection_Wrappers_FactoryContainerWrapper_Resolve_
+  commentId: Overload:VaraniumSharp.ServiceCollection.Wrappers.FactoryContainerWrapper.Resolve
+  isSpec: "True"
+  fullName: VaraniumSharp.ServiceCollection.Wrappers.FactoryContainerWrapper.Resolve
+  nameWithType: FactoryContainerWrapper.Resolve
+- uid: VaraniumSharp.ServiceCollection.Wrappers.FactoryContainerWrapper.Resolve``1
+  name: Resolve<TService>()
+  href: api/VaraniumSharp.ServiceCollection.Wrappers.FactoryContainerWrapper.html#VaraniumSharp_ServiceCollection_Wrappers_FactoryContainerWrapper_Resolve__1
+  commentId: M:VaraniumSharp.ServiceCollection.Wrappers.FactoryContainerWrapper.Resolve``1
+  name.vb: Resolve(Of TService)()
+  fullName: VaraniumSharp.ServiceCollection.Wrappers.FactoryContainerWrapper.Resolve<TService>()
+  fullName.vb: VaraniumSharp.ServiceCollection.Wrappers.FactoryContainerWrapper.Resolve(Of TService)()
+  nameWithType: FactoryContainerWrapper.Resolve<TService>()
+  nameWithType.vb: FactoryContainerWrapper.Resolve(Of TService)()
+- uid: VaraniumSharp.ServiceCollection.Wrappers.FactoryContainerWrapper.ResolveMany*
+  name: ResolveMany
+  href: api/VaraniumSharp.ServiceCollection.Wrappers.FactoryContainerWrapper.html#VaraniumSharp_ServiceCollection_Wrappers_FactoryContainerWrapper_ResolveMany_
+  commentId: Overload:VaraniumSharp.ServiceCollection.Wrappers.FactoryContainerWrapper.ResolveMany
+  isSpec: "True"
+  fullName: VaraniumSharp.ServiceCollection.Wrappers.FactoryContainerWrapper.ResolveMany
+  nameWithType: FactoryContainerWrapper.ResolveMany
+- uid: VaraniumSharp.ServiceCollection.Wrappers.FactoryContainerWrapper.ResolveMany``1
+  name: ResolveMany<TService>()
+  href: api/VaraniumSharp.ServiceCollection.Wrappers.FactoryContainerWrapper.html#VaraniumSharp_ServiceCollection_Wrappers_FactoryContainerWrapper_ResolveMany__1
+  commentId: M:VaraniumSharp.ServiceCollection.Wrappers.FactoryContainerWrapper.ResolveMany``1
+  name.vb: ResolveMany(Of TService)()
+  fullName: VaraniumSharp.ServiceCollection.Wrappers.FactoryContainerWrapper.ResolveMany<TService>()
+  fullName.vb: VaraniumSharp.ServiceCollection.Wrappers.FactoryContainerWrapper.ResolveMany(Of TService)()
+  nameWithType: FactoryContainerWrapper.ResolveMany<TService>()
+  nameWithType.vb: FactoryContainerWrapper.ResolveMany(Of TService)()
 - uid: VaraniumSharp.ServiceCollection.Wrappers.HttpClientInjectableWrapper
   name: HttpClientInjectableWrapper
   href: api/VaraniumSharp.ServiceCollection.Wrappers.HttpClientInjectableWrapper.html

@@ -9,7 +9,7 @@
       "output": {
         ".html": {
           "relative_path": "api/VaraniumSharp.ServiceCollection.ContainerSetup.html",
-          "hash": "DG17fyXz6tvVTz16/7L+Hw=="
+          "hash": "qHElP8CDQ1TL9EYiI9QZ3xu+mry/79tMXEezGCrO7Cc="
         }
       },
       "is_incremental": false,
@@ -21,7 +21,7 @@
       "output": {
         ".html": {
           "relative_path": "api/VaraniumSharp.ServiceCollection.Extensions.ServiceCollectionExtension.html",
-          "hash": "VtXqpeK7Ercq07TEim0PFg=="
+          "hash": "sbAv5HJUQhkVs1xzzW5qrl3dCE7FPAm+QcKzBFpn3LM="
         }
       },
       "is_incremental": false,
@@ -33,7 +33,19 @@
       "output": {
         ".html": {
           "relative_path": "api/VaraniumSharp.ServiceCollection.Extensions.html",
-          "hash": "5FYQ4nT56KpAz7CjIisoTA=="
+          "hash": "8rlQxrsVC+/bT1IT4MNVJiWODrCtX6K7vxL7tvmkg/o="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/VaraniumSharp.ServiceCollection.Wrappers.FactoryContainerWrapper.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/VaraniumSharp.ServiceCollection.Wrappers.FactoryContainerWrapper.html",
+          "hash": "HMof7p4/kezp0RfDEaBuSA4DUjBZKRqBrHHOlugMEIE="
         }
       },
       "is_incremental": false,
@@ -45,7 +57,7 @@
       "output": {
         ".html": {
           "relative_path": "api/VaraniumSharp.ServiceCollection.Wrappers.HttpClientInjectableWrapper.html",
-          "hash": "U21gnPLdqYDNwZY8XCpMOw=="
+          "hash": "4nJ7uYf/UG0nmOHfseLYWaJ16q/QTVhmbBoiZOr/6vk="
         }
       },
       "is_incremental": false,
@@ -57,7 +69,7 @@
       "output": {
         ".html": {
           "relative_path": "api/VaraniumSharp.ServiceCollection.Wrappers.html",
-          "hash": "bc6SMcMgCJiD/AqKWnzsuA=="
+          "hash": "4VA5A8ccPmYSPLroz+V9A8SDsrEXjDLhSVR1fKNYtj0="
         }
       },
       "is_incremental": false,
@@ -69,7 +81,7 @@
       "output": {
         ".html": {
           "relative_path": "api/VaraniumSharp.ServiceCollection.html",
-          "hash": "RBzhlKyq2dkbNT4yXoRMSw=="
+          "hash": "QD3e1NGdjq/T9UKQsawjJVnxbg/b6ULfKeSSPVS/rh0="
         }
       },
       "is_incremental": false,
@@ -81,7 +93,7 @@
       "output": {
         ".html": {
           "relative_path": "api/index.html",
-          "hash": "NDpyrRj/LVpDGkhvqRivaA=="
+          "hash": "nyiKnC6V/FzMRDHYUz65rdim0nvknoumcDK9Mx1iBtk="
         }
       },
       "is_incremental": false,
@@ -93,7 +105,7 @@
       "output": {
         ".html": {
           "relative_path": "api/toc.html",
-          "hash": "lpTkqeNFdujbXnBkNL/lvw=="
+          "hash": "3pw3sHoBhGLYO3T/EC7wkSUWCuhfVgBdEY/2CwPcx4M="
         }
       },
       "is_incremental": false,
@@ -105,7 +117,7 @@
       "output": {
         ".html": {
           "relative_path": "articles/intro.html",
-          "hash": "SUaFoujBJ/XJJPRiFnk8Sg=="
+          "hash": "3WPHpTF3nJWkWvccGBDxz0G4fLnfUuLYpd/Ra9wMwsg="
         }
       },
       "is_incremental": false,
@@ -117,7 +129,7 @@
       "output": {
         ".html": {
           "relative_path": "articles/toc.html",
-          "hash": "gB8AESyvNru97tzIZofEEg=="
+          "hash": "BlPxk5mtl2kgfcZUgkEguqiSAR/EUyUTT4EdebwkQvs="
         }
       },
       "is_incremental": false,
@@ -140,7 +152,7 @@
       "output": {
         ".html": {
           "relative_path": "index.html",
-          "hash": "EaSFks0oTOUT3qtn60lwKQ=="
+          "hash": "vP5XAasz1BcUkoSb+FbT+TWfgvzyaLdLeu9XevXldTA="
         }
       },
       "is_incremental": false,
@@ -152,7 +164,7 @@
       "output": {
         ".html": {
           "relative_path": "toc.html",
-          "hash": "EIhwD2+o19OxxQFCB6JJTg=="
+          "hash": "s+UecGKJLe11K3w4+MJjx6QoiqktkO8teeQG06lk8L0="
         }
       },
       "is_incremental": false,
@@ -170,17 +182,16 @@
         "full_build_reason_code": "NoAvailableBuildCache"
       },
       "processors": {
-        "TocDocumentProcessor": {
-          "can_incremental": false,
-          "details": "Processor TocDocumentProcessor cannot support incremental build because the processor doesn't implement ISupportIncrementalDocumentProcessor interface.",
-          "incrementalPhase": "build",
-          "total_file_count": 0,
-          "skipped_file_count": 0
-        },
         "ConceptualDocumentProcessor": {
           "can_incremental": false,
           "incrementalPhase": "build",
           "total_file_count": 3,
+          "skipped_file_count": 0
+        },
+        "ManagedReferenceDocumentProcessor": {
+          "can_incremental": false,
+          "incrementalPhase": "build",
+          "total_file_count": 7,
           "skipped_file_count": 0
         },
         "ResourceDocumentProcessor": {
@@ -190,10 +201,11 @@
           "total_file_count": 0,
           "skipped_file_count": 0
         },
-        "ManagedReferenceDocumentProcessor": {
+        "TocDocumentProcessor": {
           "can_incremental": false,
+          "details": "Processor TocDocumentProcessor cannot support incremental build because the processor doesn't implement ISupportIncrementalDocumentProcessor interface.",
           "incrementalPhase": "build",
-          "total_file_count": 6,
+          "total_file_count": 0,
           "skipped_file_count": 0
         }
       }
