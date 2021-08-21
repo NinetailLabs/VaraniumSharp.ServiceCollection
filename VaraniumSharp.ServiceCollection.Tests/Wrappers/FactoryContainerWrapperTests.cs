@@ -15,7 +15,7 @@ namespace VaraniumSharp.ServiceCollection.Tests.Wrappers
             // arrange
             var container = new ServiceProviderFixture();
             var dummyObject = new Mock<ITestHelper>();
-            container.EntriesToReturns.Add(dummyObject);
+            container.EntriesToReturns.Add(dummyObject.Object);
             var sut = new FactoryContainerWrapper(container);
 
             // act
