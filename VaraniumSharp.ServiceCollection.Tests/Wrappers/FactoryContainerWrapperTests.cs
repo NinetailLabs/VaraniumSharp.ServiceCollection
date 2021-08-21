@@ -27,6 +27,23 @@ namespace VaraniumSharp.ServiceCollection.Tests.Wrappers
         }
 
         [Fact]
+        public void ResolvingAServiceByTypeWorksCorrectly()
+        {
+            // arrange
+            var container = new ServiceProviderFixture();
+            var dummyObject = new Mock<ITestHelper>();
+            container.EntriesToReturns.Add(dummyObject.Object);
+            var sut = new FactoryContainerWrapper(container);
+
+            // act
+            var _ = sut.Resolve(typeof(ITestHelper));
+
+            // assert
+            container.GetServiceRequests.Count.Should().Be(1);
+            container.GetServiceRequests[0].Should().Be(typeof(ITestHelper));
+        }
+
+        [Fact]
         public void ResolvingManyServicesWorksCorrectly()
         {
             // arrange
