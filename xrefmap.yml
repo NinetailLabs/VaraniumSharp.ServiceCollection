@@ -134,6 +134,12 @@ references:
   isSpec: "True"
   fullName: VaraniumSharp.ServiceCollection.Wrappers.FactoryContainerWrapper.FactoryContainerWrapper
   nameWithType: FactoryContainerWrapper.FactoryContainerWrapper
+- uid: VaraniumSharp.ServiceCollection.Wrappers.FactoryContainerWrapper.Resolve(System.Type)
+  name: Resolve(Type)
+  href: api/VaraniumSharp.ServiceCollection.Wrappers.FactoryContainerWrapper.html#VaraniumSharp_ServiceCollection_Wrappers_FactoryContainerWrapper_Resolve_System_Type_
+  commentId: M:VaraniumSharp.ServiceCollection.Wrappers.FactoryContainerWrapper.Resolve(System.Type)
+  fullName: VaraniumSharp.ServiceCollection.Wrappers.FactoryContainerWrapper.Resolve(System.Type)
+  nameWithType: FactoryContainerWrapper.Resolve(Type)
 - uid: VaraniumSharp.ServiceCollection.Wrappers.FactoryContainerWrapper.Resolve*
   name: Resolve
   href: api/VaraniumSharp.ServiceCollection.Wrappers.FactoryContainerWrapper.html#VaraniumSharp_ServiceCollection_Wrappers_FactoryContainerWrapper_Resolve_
