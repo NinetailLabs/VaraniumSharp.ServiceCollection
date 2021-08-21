@@ -35,7 +35,7 @@ namespace VaraniumSharp.ServiceCollection.Tests.Wrappers
             var sut = new FactoryContainerWrapper(container);
 
             // act
-            var _ = sut.ResolveMany<)<ITestHelper>();
+            var _ = sut.ResolveMany<ITestHelper>();
 
             // assert
             container.GetServiceRequests.Count.Should().Be(1);
