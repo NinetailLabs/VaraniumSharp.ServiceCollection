@@ -29,6 +29,7 @@ Task ("VariableSetup")
 		botToken = EnvironmentVariable("BotToken");
 		gitRepo = string.Format("https://github.com/{0}/{1}.git", repoOwner, projectName);
 		toolVersion = MSBuildToolVersion.VS2022;
+		excludedFiles = new List<string> { "**/System.Text.Json.SourceGeneration/**/*.g.cs" };
 	});
 
 Task ("Default")
