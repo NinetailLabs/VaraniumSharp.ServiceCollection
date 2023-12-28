@@ -12,6 +12,23 @@ namespace VaraniumSharp.ServiceCollection.Tests
     public class ContainerSetupTests
     {
         [Fact]
+        public void AutoResolveClassesAreCorrectlyResolved()
+        {
+            // arrange
+            var serviceCollection = new Microsoft.Extensions.DependencyInjection.ServiceCollection();
+            var sut = new ContainerSetup(serviceCollection);
+            sut.RetrieveClassesRequiringRegistration(true);
+
+            // act
+            sut.AutoResolveRequiredClasses();
+
+            // assert
+            var services = serviceCollection.BuildServiceProvider();
+            _ = services.GetRequiredService<AutoResolve>();
+            AutoResolve.TimesResolved.Should().BeGreaterOrEqualTo(2);
+        }
+
+        [Fact]
         public void ClassWithMultipleConstructorsIsRegisteredCorrectly()
         {
             // arrange
@@ -22,6 +39,24 @@ namespace VaraniumSharp.ServiceCollection.Tests
             // act
             // assert
             act.Should().NotThrow<Exception>();
+        }
+
+        [Fact]
+        public void ConcretionAutoResolveClassesAreCorrectlyResolved()
+        {
+            // arrange
+            var serviceCollection = new Microsoft.Extensions.DependencyInjection.ServiceCollection();
+            var sut = new ContainerSetup(serviceCollection);
+            sut.RetrieveConcretionClassesRequiringRegistration(true);
+
+            // act
+            sut.AutoResolveRequiredClasses();
+
+            // assert
+            var services = serviceCollection.BuildServiceProvider();
+            var autoResolves = services.GetServices(typeof(AutoResolveBase)).Cast<AutoResolveBase>().ToList();
+            autoResolves.Count.Should().Be(2);
+            autoResolves.All(x => x.TimesResolved == 1).Should().BeTrue();
         }
 
         [Fact]

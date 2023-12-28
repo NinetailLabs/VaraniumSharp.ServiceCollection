@@ -47,6 +47,27 @@ namespace VaraniumSharp.ServiceCollection
         #region Private Methods
 
         /// <inheritdoc />
+        protected override void AutoResolveStartupInstance()
+        {
+            var provider = _services.BuildServiceProvider();
+            foreach (var entry in ClassesToAutoRegister)
+            {
+                var registrationAttribute =
+                    (AutomaticConcretionContainerRegistrationAttribute)
+                    entry.GetCustomAttribute(typeof(AutomaticConcretionContainerRegistrationAttribute));
+
+                if (registrationAttribute != null)
+                {
+                    _ = provider.GetServices(entry);
+                }
+                else
+                {
+                    _ = provider.GetService(entry);
+                }
+            }
+        }
+
+        /// <inheritdoc />
         protected override void RegisterClasses()
         {
             foreach (var @class in ClassesToRegister)
