@@ -30,6 +30,7 @@ Task ("VariableSetup")
 		gitRepo = string.Format("https://github.com/{0}/{1}.git", repoOwner, projectName);
 		toolVersion = MSBuildToolVersion.VS2022;
 		excludedFiles = new List<string> { "**/System.Text.Json.SourceGeneration/**/*.g.cs" };
+		coverFilename = "coverage.json";
 	});
 
 Task ("Default")
