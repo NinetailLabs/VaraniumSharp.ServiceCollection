@@ -4,108 +4,12 @@
   "xrefmap": "xrefmap.yml",
   "files": [
     {
-      "type": "ManagedReference",
-      "source_relative_path": "api/VaraniumSharp.ServiceCollection.ContainerSetup.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/VaraniumSharp.ServiceCollection.ContainerSetup.html",
-          "hash": "qHElP8CDQ1TL9EYiI9QZ3xu+mry/79tMXEezGCrO7Cc="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/VaraniumSharp.ServiceCollection.Extensions.ServiceCollectionExtension.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/VaraniumSharp.ServiceCollection.Extensions.ServiceCollectionExtension.html",
-          "hash": "sbAv5HJUQhkVs1xzzW5qrl3dCE7FPAm+QcKzBFpn3LM="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/VaraniumSharp.ServiceCollection.Extensions.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/VaraniumSharp.ServiceCollection.Extensions.html",
-          "hash": "8rlQxrsVC+/bT1IT4MNVJiWODrCtX6K7vxL7tvmkg/o="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/VaraniumSharp.ServiceCollection.Wrappers.FactoryContainerWrapper.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/VaraniumSharp.ServiceCollection.Wrappers.FactoryContainerWrapper.html",
-          "hash": "dHCaeg4DUfe8fdSBL6k+xuxXfFwq1DPQx2lAcQCoAyg="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/VaraniumSharp.ServiceCollection.Wrappers.HttpClientInjectableWrapper.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/VaraniumSharp.ServiceCollection.Wrappers.HttpClientInjectableWrapper.html",
-          "hash": "4nJ7uYf/UG0nmOHfseLYWaJ16q/QTVhmbBoiZOr/6vk="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/VaraniumSharp.ServiceCollection.Wrappers.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/VaraniumSharp.ServiceCollection.Wrappers.html",
-          "hash": "4VA5A8ccPmYSPLroz+V9A8SDsrEXjDLhSVR1fKNYtj0="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/VaraniumSharp.ServiceCollection.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/VaraniumSharp.ServiceCollection.html",
-          "hash": "QD3e1NGdjq/T9UKQsawjJVnxbg/b6ULfKeSSPVS/rh0="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
       "type": "Conceptual",
       "source_relative_path": "api/index.md",
       "output": {
         ".html": {
           "relative_path": "api/index.html",
-          "hash": "nyiKnC6V/FzMRDHYUz65rdim0nvknoumcDK9Mx1iBtk="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "Toc",
-      "source_relative_path": "api/toc.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/toc.html",
-          "hash": "3pw3sHoBhGLYO3T/EC7wkSUWCuhfVgBdEY/2CwPcx4M="
+          "hash": "1NUGfT2BpxfpR/JI4GNqT46AzDek0gI2E6OjnH2FFv4="
         }
       },
       "is_incremental": false,
@@ -164,7 +68,7 @@
       "output": {
         ".html": {
           "relative_path": "toc.html",
-          "hash": "s+UecGKJLe11K3w4+MJjx6QoiqktkO8teeQG06lk8L0="
+          "hash": "SfpqaaaRkqleaKDGaUS1uB78wPwHCwxhQVteqHU6qx4="
         }
       },
       "is_incremental": false,
@@ -186,12 +90,6 @@
           "can_incremental": false,
           "incrementalPhase": "build",
           "total_file_count": 3,
-          "skipped_file_count": 0
-        },
-        "ManagedReferenceDocumentProcessor": {
-          "can_incremental": false,
-          "incrementalPhase": "build",
-          "total_file_count": 7,
           "skipped_file_count": 0
         },
         "ResourceDocumentProcessor": {
