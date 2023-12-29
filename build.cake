@@ -7,7 +7,7 @@
 #load "CakeScripts/base/base.nuget.restore.cake"
 #load "CakeScripts/base/base.msbuild.cake"
 #load "CakeScripts/base/base.coverlet.tool.cake"
-#load "custom.coveralls.upload.cake"
+#load "custom.coveralls.upload.tool.cake"
 #load "CakeScripts/base/base.gitreleasenotes.cake"
 #load "CakeScripts/base/base.nuget.pack.cake"
 #load "CakeScripts/base/base.nuget.push.cake"
