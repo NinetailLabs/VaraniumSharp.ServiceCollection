@@ -119,4 +119,57 @@ namespace VaraniumSharp.ServiceCollection.Tests.Fixtures
 
         #endregion
     }
+
+    [AutomaticContainerRegistration(typeof(AutoResolve), AutoResolveAtStartup = true)]
+    public class AutoResolve
+    {
+        #region Constructor
+
+        public AutoResolve()
+        {
+            TimesResolved++;
+        }
+
+        #endregion
+
+        #region Properties
+
+        public static int TimesResolved { get; private set; }
+
+        #endregion
+    }
+
+    [AutomaticConcretionContainerRegistration(ServiceReuse.Singleton, AutoResolveAtStartup = true)]
+    public abstract class AutoResolveBase
+    {
+        #region Properties
+
+        public int TimesResolved { get; protected init; }
+
+        #endregion
+    }
+
+    public class AutoResolve1 : AutoResolveBase
+    {
+        #region Constructor
+
+        public AutoResolve1()
+        {
+            TimesResolved++;
+        }
+
+        #endregion
+    }
+
+    public class AutoResolve2 : AutoResolveBase
+    {
+        #region Constructor
+
+        public AutoResolve2()
+        {
+            TimesResolved++;
+        }
+
+        #endregion
+    }
 }

@@ -1,0 +1,18 @@
+{
+  "version": 1,
+  "isRoot": true,
+  "tools": {
+    "coverlet.console": {
+      "version": "6.0.0",
+      "commands": [
+        "coverlet"
+      ]
+    },
+    "coveralls.net": {
+      "version": "4.0.1",
+      "commands": [
+        "csmacnz.Coveralls"
+      ]
+    }
+  }
+}
