@@ -26,7 +26,7 @@ Task ("CoverageUpload")
             return;
         }
 
-		var args = $"csmacnz.Coveralls --opencover -i {coverPath} --repoToken {coverallRepoToken} --commitId {gitHash} --commitBranch {branch} --commitMessage {commitMessage}";
+		var args = $"csmacnz.Coveralls --opencover -i {coverPath} --repoToken {coverallRepoToken} --commitId {gitHash} --commitBranch {branch}";
         StartProcess("dotnet", args);
 
         EndBlock(blockText);
