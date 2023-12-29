@@ -6,8 +6,8 @@
 #load "CakeScripts/base/base.setup.cake"
 #load "CakeScripts/base/base.nuget.restore.cake"
 #load "CakeScripts/base/base.msbuild.cake"
-#load "CakeScripts/base/base.altcover.cake"
-#load "CakeScripts/base/base.coveralls.upload.cake"
+#load "CakeScripts/base/base.coverlet.tool.cake"
+#load "CakeScripts/base/base.coveralls.upload.tool.cake"
 #load "CakeScripts/base/base.gitreleasenotes.cake"
 #load "CakeScripts/base/base.nuget.pack.cake"
 #load "CakeScripts/base/base.nuget.push.cake"
@@ -28,6 +28,8 @@ Task ("VariableSetup")
 		botEmail = "gitbot@ninetaillabs.com";
 		botToken = EnvironmentVariable("BotToken");
 		gitRepo = string.Format("https://github.com/{0}/{1}.git", repoOwner, projectName);
+		toolVersion = MSBuildToolVersion.VS2022;
+		excludedFiles = new List<string> { "**/System.Text.Json.SourceGeneration/**/*.g.cs" };
 	});
 
 Task ("Default")
